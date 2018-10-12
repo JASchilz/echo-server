@@ -50,7 +50,7 @@ def server(log_buffer=sys.stderr):
                 sys.exit(1)
                 
             finally:
-                sock.close()
+                conn.close()
                 print(
                     'echo complete, client connection closed', file=log_buffer)
 
